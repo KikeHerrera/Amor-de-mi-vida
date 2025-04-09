@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Quien eres tú?</title>
+  <link rel="stylesheet" href="../estilo.css" />
+  <style>
+
+    body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #ece0ffa9, #6807e794);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    }
+    .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .principal {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    @media(min-width: 768px) {
+      .principal {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    .texto {
+      max-width: 600px;
+      text-align: justify;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .carrusel {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+    }
+
+    .carrusel img {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    a {
+      margin-top: 30px;
+      display: inline-block;
+      background-color: #d63384;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background-color: #a71d5d;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenido">
+    <h1>Tu esencia, Daniela 🌟</h1>
+    <div class="principal">
+      <div class="texto">
+        <p>Tu nombre es Daniela Alexandra Trejo de Herrera, la pregunta tan básica pero tan complicada de responder personalmente, es difícil estar en situaciones que no sabemos manejar, sentimientos que no entendemos y ahi es cuando en realidad nos preguntamos: ¿Quién soy?, te recuerdo eres una persona que nació el 9 de Noviembre de 2003, nació llorando anticipadamente un aviso a la persona tan dulce y sensible que crecería poco a poco, una niña que con el pasar del tiempo creció y creció poco a poco y fue aprendiendo lo que era esta vida dulce pero a la vez cruel, fuiste una niña que iba a su kinder, feliz, a jugar a aprender, creciste mas y fuiste alguien que se enfocaba en ser la mejor en todo y lo fue, la mejor en la materia que fuera, seguiste creciendo, conociste personas que te dañaron, relaciones, amig@s que te fallaron y abandonaron pero aun así seguiste caminando y seguiste creciendo sin detenerte, llegaste a ser una persona increíble en bachillerato, una estudiante estrella que salía bien en todo, una presidenta que tenia la capacidad de poner orden y creatividad a lo que se le pidiera, una amiga que siempre estuvo para los suyos a pesar de que ellos no estuvieran para ella, fuiste la mejor y seguiste creciendo, hasta graduarte, hasta conocer más a profundidad la realidad donde nos topamos con sentimientos reprimidos, pensamientos fuertes, limitantes emocionales, económicas, la famosa "Cruda Realidad" es tan lindo ver como creciste tanto a pesar de a veces haber fallado, de a veces a ver llorado, de a veces haber estado en una cama en la noche pensando si vale la pena seguir en este plano terrenal o simplemente si vale la pena todo lo que haces dentro de esta crueldad realidad llamada VIDA.</p>
+
+        <p>Actualmente creciste tanto que nos olvidamos de esa niña preciosa que sonreía a todo a pesar de estar mal, esa niña aun existe pero la vida te dio tantos golpes de muchas formas que decidiste guardar o esconder a esa niña, pero en el fondo esa niña ve su presente y se siente orgullosa de lo que es, una universitaria cumpliendo el sueño de su carrera en periodismo, cumpliendo al paso que sea pero amando una rama de locución, de fotografía todo tipo de rama que sea mediante su carrera, carrera que siempre quiso o que al menos hace unos meses o años quería, Esa niña pequeña que esta escondida se siente orgullosa de verse actualmente en unas puntas, en unas zapatillas en un leotardo practicando el deporte o arte de lo que es el ballet, algo que desde chiquita soñó con poder hacer, Esa niña pequeña que esta escondida se que se siente orgullosa de tener alguien que de verdad la ama, la consiente, la quiere y la adora como siempre lo busco, esa niña escondida que se siente completamente bien es lo que en realidad eres.
+            
+            Recordarte quien eres y mencionar pequeñeces de lo que haz logrado o estas logrando es lo que en realidad debes de ver en todo sentido y en tomo momento, ERES LA PERSONA MAS INCREIBLE EN ESTE PUTO PLANETA TIERRA.</p>
+      </div>
+      <div class="carrusel">
+        <img id="imagen-carrusel" src="../img/foto1.jpg" alt="Foto Daniela">
+      </div>
+    </div>
+    <a href="../index.html">Volver 🔙</a>
+  </div>
+
+  <script>
+    const imagenes = [
+      "../img/Pequeña.jpeg",
+      "../img/Liceo.jpeg",
+      "../img/Arce.jpeg",
+      "../img/UES.jpeg",
+      "../img/vos.jpeg",
+      "../img/HERMOSAA.jpeg",
+      "../img/FELIZ CON GATOS.jpeg",
+      "../img/con lentes.jpeg",
+      "../img/CON KIKITO.jpeg",
+      "../img/con boqui.jpeg",
+      "../img/Ballet.jpeg",
+      "../img/bALLET UES.jpeg",
+      "../img/Ballet actual.jpeg",
+    ];
+
+    let indice = 0;
+    const carrusel = document.getElementById('imagen-carrusel');
+
+     // Mostrar la primera imagen al cargar
+  window.addEventListener("load", () => {
+    carrusel.src = imagenes[indice];
+
+    setInterval(() => {
+      indice = (indice + 1) % imagenes.length;
+      carrusel.src = imagenes[indice];
+    }, 5000); // 10 segundos
+    });
+  </script>
+</body>
+</html>

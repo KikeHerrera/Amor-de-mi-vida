@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi Princesa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #d9a7c7, #fffcdc);
+            font-family: 'Poppins', sans-serif;
+            color: #4b0049;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .card {
+            background: #fff0f5;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 800px;
+            overflow-y: auto;
+            height: 90vh;
+            position: relative;
+            animation: fadeIn 2s ease;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            color: #a020f0;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.7;
+            margin: 1rem 0;
+        }
+        .flowers {
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            width: 150px;
+            opacity: 0.8;
+        }
+        .flowers-bottom {
+            position: absolute;
+            bottom: -30px;
+            left: -30px;
+            width: 150px;
+            opacity: 0.8;
+            transform: rotate(180deg);
+        }
+
+        .botones {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .boton-cancion, .boton-volver {
+      padding: 10px 20px;
+      background-color: #a64ca6;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .boton-cancion:hover, .boton-volver:hover {
+      background-color: #800080;
+      transform: scale(1.05);
+    }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .heart {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2rem;
+            animation: heartbeat 1.5s infinite;
+            color: #ff69b4;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+    </style>
+</head>
+<body>
+    
+<div class="card">
+    <div class="heart">💜</div>
+    <h1>Para mi Princesita</h1>
+    <p>Hola mi amor, quería hacerte esta carta para decirte que TE AMO y como te lo repito constantemente no estas sola, no sabes lo importante que eres para mi vida, me llenas de mucha paz y tranquilidad al estar contigo, aparte de amarte yo realmente te admiro, eres una mujer tan valiente, fuerte y sobre todo hermosa.</p>
+
+    <p>Eres como una chica super poderosa que lo tiene todo, se que hay momentos donde realmente piensas que acabar con todo es la solución o invalidar tus sentimientos sera lo mejor para todo, pero no es asi, nada de eso te ayudara, no eres una persona que no sienta, eres una persona sensible, de corazón noble y una persona que fue creada para ser amada de la manera que quiero amarte...</p>
+
+    <p>Desde que te conozco, todas las canciones de amor tienen sentido, cada letra linda me suena a ti, cada melodía me recuerda a la paz que me das y cada verso de una canción hermosa parece que describe el amor que tengo por ti o está escrito para nosotros.</p>
+
+    <p>Yo se que más de alguna vez, te has preguntado por que te amo, pero dimeee ¿Como no amarte si incluso hiciste que me amara a mi mismo? Se que a veces soy un caos JAJAJAJA, pero llegaste a mi vida y amaste hasta la parte mas caotica de mi...</p>
+
+    <p>No quiero que exista un "Después" de nosotros, porque sé que te llevaré siempre en el corazón toda la vida...</p>
+
+    <p>Ven conmigo a vivir el Limbo que tengamos que vivir, sosten mi mano fuertemente y transita conmigo el miedo, caminemos bajo la lluvia, conozcamos juntos el final de nuestras vidas...</p>
+
+    <p>Mi corazón siempre ha sido tu casa, no tienes que preocuparte nunca más por no tener donde ir, me tienes a mi, ofreciéndote todo, cada latido de mi corazón, cada respiro de mi vida, cada centavo de mi billetera, cada todo de mi infinito.</p>
+
+    <p>Con esto quiero mostrarte en una pequeña porción de todo lo que me has llegado a hacer sentir...</p>
+
+    <p>Eres quien me da paz, quien hace que aun, un beso, desnudarnos, una date, me ponga nervioso con solo un mensaje lindo...</p>
+
+    <p>Gracias por hacerme la persona más feliz en este mundo. No sé ni siquiera como escribir lo que siento por ti, un simple "Te amo" se queda corto...</p>
+
+    <p><strong>TE AMO 3 MILLONES MI PRINCESITA.</strong></p>
+    <div class="botones">
+        <a class="boton-cancion" href="https://youtu.be/PQlG1gznMBE" target="_blank">🎵 Dale Play a Nuestra Canción 🎵</a>
+        <a class="boton-volver" href="javascript:history.back()">🔙 Volver</a>
+      </div>
+</div>
+
+</body>
+</html>
